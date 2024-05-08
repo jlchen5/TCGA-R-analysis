@@ -35,6 +35,6 @@ ggplot(ICG_and_HLA_exp, aes(gene,exp,fill = factor(subtype_df))) +
   labs( x = "", y = "Expression") +
   stat_compare_means(method = "wilcox.test",
                      hide.ns = T,
-                     size=1,
+                     size=2,
                      label = "p.format",
                      aes(group =  factor(subtype_df)))
